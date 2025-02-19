@@ -1,0 +1,6 @@
+cors
+flask
+flask_cors
+requests
+python-dotenv
+pyfiglet
