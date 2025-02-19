@@ -4,3 +4,4 @@ flask_cors
 requests
 python-dotenv
 pyfiglet
+jsonify

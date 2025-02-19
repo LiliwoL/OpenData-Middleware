@@ -12,7 +12,7 @@ import json
 from json import JSONDecodeError
 import os
 from dotenv import load_dotenv
-from flask import Flask
+from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 import datetime
 import platform
@@ -112,6 +112,14 @@ def bikesrealtime():
     return resp_dict
 
 
+@app.route("/")
+def home():
+    return "Flask Vercel Example - Hello World", 200
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return jsonify({"status": 404, "message": "Not Found"}), 404
 # ======================================================================================================================
 
 # Lancement de l'app

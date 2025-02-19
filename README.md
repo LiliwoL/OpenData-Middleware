@@ -5,17 +5,22 @@ On réalise ici un **middleware** pour aller consommer les APIs OpenData fournie
 L'objectif est de ne pas avoir à réécrire les clients à chaque modification des APIs utilisées.
 De plus, les clés API ne sont pas exposées dans le code source.
 
-## Dépendances
+# Dépendances
 
 pip install -r requirements.txt --break-system-packages
 
-## Lancement
+# Lancement
 
 python middleware.py
 
-## Postman Collection
+# Postman Collection
 
 Pour tester les routes, le dossier **PostmanCollection** contient une collection de requêtes Postman.
+
+# Déploiement
+
+Le déploiement se fait sur Vercel.
+https://dev.to/andrewbaisden/how-to-deploy-a-python-flask-app-to-vercel-2o5k
 
 # TODO
 
