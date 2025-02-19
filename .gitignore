@@ -5,3 +5,4 @@ env.js
 __pycache__
 DATA/
 PostmanCollection/
+.vercel
